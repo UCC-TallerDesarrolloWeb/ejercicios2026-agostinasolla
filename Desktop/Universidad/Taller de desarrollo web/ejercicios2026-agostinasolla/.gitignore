@@ -1,3 +1,5 @@
 node-module
 *.pdf
 *.Trash/
+*"Universidad/"
+*"Desktop/"
