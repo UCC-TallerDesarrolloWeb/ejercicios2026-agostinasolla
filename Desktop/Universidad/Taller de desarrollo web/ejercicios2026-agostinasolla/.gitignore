@@ -1,7 +1,7 @@
 node-module
 *.pdf
 *.Trash/
-*"agostinabelen/"
-*"Desktop/"
-*"Universidad/"
-*"Taller de desarrollo web/"
+*agostinabelen/
+*Desktop/
+*Universidad/
+*Taller de desarrollo web/
