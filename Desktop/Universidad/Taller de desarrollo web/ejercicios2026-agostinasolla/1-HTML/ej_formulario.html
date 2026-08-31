@@ -22,34 +22,44 @@
     <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
     <form name="form-suscripcion">
         <p>
-            Nombre:<input type="text" name="Nombre" placeholder="Ingrese el nombre"></intput>
+            <label for="nombre">Nombre:</label>
+            Nombre:<input type="text" id="nombre" name="Nombre" placeholder="Ingrese el nombre"></intput>
         </p>
         <p>
-            Apellido:<input type="text" name="Apellido" placeholder="Ingrese el apellido"></intput>
+            <label for="Apellido">Apellido:</label>
+            Apellido:<input type="text" id="apellido" name="Apellido" placeholder="Ingrese el apellido"></intput>
         </p>
         <p>
             Sexo:
-            Masculino: <input type="radio" name="Sex" value="masculino">
-            Femenino: <input type="radio" name="Sex" value="femenino">
+            <label for="masculino">Masculino:</label>
+            Masculino: <input type="radio" id="masculino" name="Sex" value="masculino">
+            <label for="femenino">femenino:</label>
+            Femenino: <input type="radio" id="femenino" name="Sex" value="femenino">
         <p>
-            Edad: <input type="number" name="Edad" placeholder="edad" maxlength="3">
+            <label for="edad">edad:</label>
+            Edad: <input type="number" id="edad" name="Edad" placeholder="edad" maxlength="3">
         </p>
         <p>
-            Email: <input type="text" name="email" placeholder="usuario@dominio">
+            <label for="email">email:</label>
+            Email: <input type="text" id="email" name="email" placeholder="usuario@dominio">
         </p>
         <p>
-            Usuario: <input type="text" name="usuario" placeholder="Nombre de usuario" </p>
+            <label for="usuario">usuario:</label>
+            Usuario: <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" </p>
         <p>
+            <label for="password">password:</label>
             Password:
-            <input type="password" name="password" placeholder="contrasena">
+            <input type="password" id="password" name="password" placeholder="contrasena">
         </p>
         <p>
+            <label for="con_password">confirmar password:</label>
             Confirmar Password:
-            <input type="password" name="segunda-password" placeholder="contrasena">
+            <input type="password" id="con_password" name="segunda-password" placeholder="contrasena">
         </p>
         <p>
+            <label for="tipo-servicio">tipo de servicio:</label>
             Tipo de servicio:
-            <select name="tipo-servicio">
+            <select name="tipo-servicio" id="tipo-servicio">
                 <option value="Free">Free</option>
                 <option value="Standard"> Standard </option>
                 <option value="Premium">Premium </option>
@@ -57,14 +67,19 @@
         </p>
         <p>
             Tema:
-            Política <input type="checkbox" value="politica">
-            Negocios <input type="checkbox" value="negocios">
-            Tecnología <input type="checkbox" value="tecnologia">
-            Salud <input type="checkbox" value="salud">
+            <label for="politica">politica:</label>
+            Política <input type="checkbox" id="politica" value="politica">
+            <label for="negocios">negocios:</label>
+            Negocios <input type="checkbox" id="negocios" value="negocios">
+            <label for="tecnologia">tecnologia:</label>
+            Tecnología <input type="checkbox" id="tecnologia" value="tecnologia">
+            <label for="salud">salud:</label>
+            Salud <input type="checkbox" id="salud" value="salud">
         </p>
         <p>
+            <label for="comentario">Agregar un comentario:</label>
             Agregue un comentario:
-            <textarea>
+            <textarea id="comentario">
                 Deje su comentario...
             </textarea>
         </p>
