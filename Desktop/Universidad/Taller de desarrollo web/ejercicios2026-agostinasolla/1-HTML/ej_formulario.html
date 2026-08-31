@@ -21,61 +21,70 @@
 
     <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
     <form name="form-suscripcion">
-        <p>
-            <label for="nombre">Nombre:</label>
-            Nombre:<input type="text" id="nombre" name="Nombre" placeholder="Ingrese el nombre"></intput>
-        </p>
-        <p>
-            <label for="Apellido">Apellido:</label>
-            Apellido:<input type="text" id="apellido" name="Apellido" placeholder="Ingrese el apellido"></intput>
-        </p>
-        <p>
-            Sexo:
-            <label for="masculino">Masculino:</label>
-            Masculino: <input type="radio" id="masculino" name="Sex" value="masculino">
-            <label for="femenino">femenino:</label>
-            Femenino: <input type="radio" id="femenino" name="Sex" value="femenino">
-        <p>
-            <label for="edad">edad:</label>
-            Edad: <input type="number" id="edad" name="Edad" placeholder="edad" maxlength="3">
-        </p>
-        <p>
-            <label for="email">email:</label>
-            Email: <input type="text" id="email" name="email" placeholder="usuario@dominio">
-        </p>
-        <p>
-            <label for="usuario">usuario:</label>
-            Usuario: <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" </p>
-        <p>
-            <label for="password">password:</label>
-            Password:
-            <input type="password" id="password" name="password" placeholder="contrasena">
-        </p>
-        <p>
-            <label for="con_password">confirmar password:</label>
-            Confirmar Password:
-            <input type="password" id="con_password" name="segunda-password" placeholder="contrasena">
-        </p>
-        <p>
-            <label for="tipo-servicio">tipo de servicio:</label>
-            Tipo de servicio:
-            <select name="tipo-servicio" id="tipo-servicio">
-                <option value="Free">Free</option>
-                <option value="Standard"> Standard </option>
-                <option value="Premium">Premium </option>
-            </select>
-        </p>
-        <p>
-            Tema:
-            <label for="politica">politica:</label>
-            Política <input type="checkbox" id="politica" value="politica">
-            <label for="negocios">negocios:</label>
-            Negocios <input type="checkbox" id="negocios" value="negocios">
-            <label for="tecnologia">tecnologia:</label>
-            Tecnología <input type="checkbox" id="tecnologia" value="tecnologia">
-            <label for="salud">salud:</label>
-            Salud <input type="checkbox" id="salud" value="salud">
-        </p>
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                Nombre:<input type="text" id="nombre" name="Nombre" placeholder="Ingrese el nombre"></intput>
+            </p>
+            <p>
+                <label for="Apellido">Apellido:</label>
+                Apellido:<input type="text" id="apellido" name="Apellido" placeholder="Ingrese el apellido"></intput>
+            </p>
+            <p>
+                Sexo:
+                <label for="masculino">Masculino:</label>
+                Masculino: <input type="radio" id="masculino" name="Sex" value="masculino">
+                <label for="femenino">femenino:</label>
+                Femenino: <input type="radio" id="femenino" name="Sex" value="femenino">
+            <p>
+                <label for="edad">edad:</label>
+                Edad: <input type="number" id="edad" name="Edad" placeholder="edad" maxlength="3">
+            </p>
+            <p>
+                <label for="email">email:</label>
+                Email: <input type="text" id="email" name="email" placeholder="usuario@dominio">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la cuenta</legend>
+            <p>
+                <label for="usuario">usuario:</label>
+                Usuario: <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" </p>
+            <p>
+                <label for="password">password:</label>
+                Password:
+                <input type="password" id="password" name="password" placeholder="contrasena">
+            </p>
+            <p>
+                <label for="con_password">confirmar password:</label>
+                Confirmar Password:
+                <input type="password" id="con_password" name="segunda-password" placeholder="contrasena">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de suscripcion </legend>
+            <p>
+                <label for="tipo-servicio">tipo de servicio:</label>
+                Tipo de servicio:
+                <select name="tipo-servicio" id="tipo-servicio">
+                    <option value="Free">Free</option>
+                    <option value="Standard"> Standard </option>
+                    <option value="Premium">Premium </option>
+                </select>
+            </p>
+            <p>
+                Tema:
+                <label for="politica">politica:</label>
+                Política <input type="checkbox" id="politica" value="politica">
+                <label for="negocios">negocios:</label>
+                Negocios <input type="checkbox" id="negocios" value="negocios">
+                <label for="tecnologia">tecnologia:</label>
+                Tecnología <input type="checkbox" id="tecnologia" value="tecnologia">
+                <label for="salud">salud:</label>
+                Salud <input type="checkbox" id="salud" value="salud">
+            </p>
+        </fieldset>
         <p>
             <label for="comentario">Agregar un comentario:</label>
             Agregue un comentario:
@@ -88,6 +97,7 @@
                 Enviar
             </button>
         </p>
+
     </form>
 </body>
 
