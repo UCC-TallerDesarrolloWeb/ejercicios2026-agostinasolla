@@ -22,13 +22,13 @@
 - [x] Secciones
 - [x] Títulos
 - [x] Listas
-- [ ] Link
-- [ ] Tablas I
-- [ ] Tablas II
-- [ ] Tablas III
-- [ ] Tablas VI
-- [ ] Comentarios
-- [ ] Formulario
+- [x] Link
+- [x] Tablas I
+- [x] Tablas II
+- [x] Tablas III
+- [x] Tablas VI
+- [x] Comentarios
+- [x] Formulario
 - [ ] Accesibilidad
 - [ ] Multimedia
 
