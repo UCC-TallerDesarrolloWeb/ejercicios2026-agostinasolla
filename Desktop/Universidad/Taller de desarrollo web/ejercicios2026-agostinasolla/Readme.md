@@ -30,7 +30,7 @@
 - [x] Comentarios
 - [x] Formulario
 - [x] Accesibilidad
-- [ ] Multimedia
+- [x] Multimedia
 
 ### CSS
 
