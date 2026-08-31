@@ -36,8 +36,8 @@
 
 - [x] Propiedades tipográficas
 - [x] Incrustado
-- [ ] Estilo con Descendientes
-- [ ] Pseudo Clases
+- [x] Estilo con Descendientes
+- [x] Pseudo Clases
 - [ ] CV
 - [ ] Backgrounds
 - [ ] Position
