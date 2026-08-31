@@ -38,7 +38,7 @@
 - [x] Incrustado
 - [x] Estilo con Descendientes
 - [x] Pseudo Clases
-- [ ] CV
+- [x] CV
 - [ ] Backgrounds
 - [ ] Position
 - [ ] 2 Columnas
