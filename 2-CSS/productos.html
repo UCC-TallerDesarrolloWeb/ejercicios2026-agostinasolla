@@ -15,7 +15,42 @@
             listas de navegacion
         </nav>
         <aside class="item3">
-            filtros
+            <form>
+                <fieldset>
+                    <legend>Buscador</legend>
+                    <label for="search">Buscar</label>
+                    <input type="text" name="search" id="search" placeholder="Buscar...">
+                </fieldset>
+                <fieldset>
+                    <legend>Precios</legend>
+                    <p>
+                        <label for="price-min">Minimo</label>
+                        <input type="number" name="price-min" id="price-min" min="0">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Precios</legend>
+                    <p>
+                        <label for="price-max">Minimo</label>
+                        <input type="number" name="price-max" id="price-max" min="0">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipo de producto</legend>
+                    <p>
+                        <input type="checkbox" name="tipo" id="protectores" value="productos">
+                        <label for="protectores">Protectores</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="tipo" id="entrenamiento" value="productos">
+                        <label for="entrenamiento">Entrenamiento</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="tipo" id="dobok" value="productos">
+                        <label for="dobok">Dobok</label>
+                    </p>
+                </fieldset>
+            </form>
         </aside>
     </header>
     <main class="item4">
