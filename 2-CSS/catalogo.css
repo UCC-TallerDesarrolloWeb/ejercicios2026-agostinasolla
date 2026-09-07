@@ -1,3 +1,8 @@
+:root{
+    --color-primario: red;
+    --color-secundario: blue;
+    --color-texto: white:
+}
 main{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -38,3 +43,16 @@ main{
     gap:10px;
 }
 }
+a{
+    text-decoration: none;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    font-weight: 500;
+    padding:5px;
+    transition: background-color 0.8s linier 0.2s ;
+
+}
+a:hover{
+        background-color: var(--color-secundario);
+        padding: 7px;
+    }
