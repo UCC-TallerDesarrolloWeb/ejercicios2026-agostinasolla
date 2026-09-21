@@ -55,7 +55,7 @@
 - [x] Conversor de Unidades
 - [x] Documentación
 - [x] Grados a Radianes
-- [ ] Refactorización
+- [x] Refactorización
 - [ ] Mostrar/Ocultar div
 - [ ] Mostrar/Ocultar Dialog
 - [ ] Operaciones Matemáticas

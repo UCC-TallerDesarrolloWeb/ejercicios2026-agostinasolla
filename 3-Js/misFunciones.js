@@ -5,33 +5,45 @@
  * @param {number} valor - valor ingresado por el usuario
  */
 
-function convertirunidades(id, valor){
+convertirunidades = (id, valor) => {
+    let metro, pulgada, pie, yarda;
+
     if (isNaN(valor)){
         alert("Se ingreso un valor incorrecto: " + id);
-        document.getElementById("pulgada").value = " "; 
-        document.getElementById("pie").value = " ";
-        document.getElementById("yarda").value = " ";
+        metro = " ";
+        pie = " ";
+        pulgada = " ";
+        yarda = " ";
+        
     }
     else if (id === "metro"){
-        document.getElementById("pulgada").value = valor*39; 
-        document.getElementById("pie").value = valor*3.2804;
-        document.getElementById("yarda").value = valor*1.90361;
+        metro = valor;
+        pulgada = valor*39; 
+        pie = valor*3.2804;
+        yarda = valor*1.90361;
     }
     else if (id == "pulgada"){
-        document.getElementById("metro").value = valor*0.0254;
-        document.getElementById("pie").value = valor*0.08333;
-        document.getElementById("yarda").value = valor*0.0277;
+        pulagada=valor;
+        metro = valor*0.0254;
+        pie = valor*0.08333;
+        yarda = valor*0.0277;
     }
     else if (id == "pie"){
-        document.getElementById("pulgada").value = valor*12;
-        document.getElementById("metro").value = valor*0.304;
-        document.getElementById("yarda").value = valor*0.333;
+        pie = valor;
+        pulgada = valor*12;
+        metro = valor*0.304;
+        yarda = valor*0.333;
     }
     else if (id == "yarda"){
-        document.getElementById("pulgada").value = valor*36;
-        document.getElementById("metro").value = valor*0.914;
-        document.getElementById("pie").value = valor*3;
+        yarda = valor;
+        pulgada = valor*36;
+        metro = valor*0.914;
+        pie = valor*3;
     }
+    document.getElementById("metro").value = metro;
+    document.getElementById("pie").value = pie;
+    document.getElementById("pulgada").value = pulgada;
+    document.getElementById("yarda").value = yarda;
 }
 
 
