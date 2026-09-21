@@ -46,8 +46,8 @@
 - [x] grid-areas
 - [x] Mejora
 - [x] Transitions
-- [ ] Viewport
-- [ ] Responsive
+- [x] Viewport
+- [x] Responsive
 
 ## Unidad 3: JavaScript y ES6+
 
