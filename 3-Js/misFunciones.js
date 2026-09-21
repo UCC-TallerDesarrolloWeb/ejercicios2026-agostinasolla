@@ -89,5 +89,5 @@ calcularSum = () =>{
     let sum1, sum2;
     sum1 = number(document.getElementById("num1").value);
     sum2 = number(document.getElementById("num2").value);
-    document.getElementById("totalS").value = sum1 + sum2
+    document.getElementById("totalS").innerText = sum1 + sum2
 }

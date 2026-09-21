@@ -9,7 +9,7 @@
     <script type="text/javascript" src="tienda.js"></script>
 </head>
 
-<body class="grid-container">
+<body class="grid-container" onload="mostrarCatalogo()">
     <header class="item1">
         Catalogo de productos
         <nav class="item2">
@@ -55,12 +55,12 @@
             </form>
         </aside>
     </header>
+    <dialog id="modal">
+        <h2>Cabezal Cerrado</h2>
+        <p>Cabezal de sparing disponible en color azul o rojo</p>
+        <button type="button" onclick="cerrarModal()">Cerrar</button>
+    </dialog>
     <main class="item4">
-        <dialog id="modal">
-            <h2>Cabezal Cerrado</h2>
-            <p>Cabezal de sparing disponible en color azul o rojo</p>
-            <button type="button" onclick="cerrarModal()">Cerrar</button>
-        </dialog>
         <div>
             <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/cabezal-cerrado.webp"
                 <p>Cabezal cerrado</p>
