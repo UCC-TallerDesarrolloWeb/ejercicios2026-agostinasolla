@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Catalogo de productos</title>
     <link href="catalogo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="tienda.js"></script>
 </head>
 
 <body class="grid-container">
@@ -55,9 +56,15 @@
         </aside>
     </header>
     <main class="item4">
+        <dialog id="modal">
+            <h2>Cabezal Cerrado</h2>
+            <p>Cabezal de sparing disponible en color azul o rojo</p>
+            <button type="button" onclick="cerrarModal()">Cerrar</button>
+        </dialog>
         <div>
             <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/cabezal-cerrado.webp"
                 <p>Cabezal cerrado</p>
+            <button type="button" onclick="mostrarModal()">Ver detalle del producto</button>
         </div>
         <div>
             <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/dobok.webp" <p>Dobok</p>

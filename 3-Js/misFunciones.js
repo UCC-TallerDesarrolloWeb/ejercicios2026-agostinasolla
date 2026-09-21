@@ -20,10 +20,10 @@ convertirunidades = (id, valor) => {
         metro = valor;
         pulgada = valor*39; 
         pie = valor*3.2804;
-        yarda = valor*1.90361;
+        yarda = valor*1.09361;
     }
     else if (id == "pulgada"){
-        pulagada=valor;
+        pulgada = valor;
         metro = valor*0.0254;
         pie = valor*0.08333;
         yarda = valor*0.0277;
@@ -52,7 +52,7 @@ function convertirGr(id){
 
     if(id == "grados"){
         grad = document.getElementById("grados").value;
-        rad = grad * Math.pI/180; 
+        rad = grad * Math.PI/180; 
     }
     else{ 
         rad = document.getElementById("radianes").value;
@@ -61,3 +61,22 @@ function convertirGr(id){
     document.getElementById("grados").value = grad;
     document.getElementById("radianes").value = rad;
 }
+
+/**
+ * Mostrar u ocultar div segun seleccion del usuario
+ * @method mostrarocultar
+ * @param {string} valor - Valor del Id del radio button seleccionado
+*/
+mostrarocultar = (valor) => {
+    const displayDiv = valor === "val_mostrar" ? 'block': 'none';
+    document.getElementById("undiv").style.display = displayDiv;
+    /** 
+    if (valor === "val_mostrar"){
+        document.getElementById("unDiv").style.display = "block";
+    }
+    else{
+        document.getElementById("unDiv").style.display = "none";
+    }
+*/
+}
+
