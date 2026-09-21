@@ -7,6 +7,7 @@
 
 convertirunidades = (id, valor) => {
     let metro, pulgada, pie, yarda;
+    valor = valor.replace(",",".");
 
     if (isNaN(valor)){
         alert("Se ingreso un valor incorrecto: " + id);
@@ -40,10 +41,10 @@ convertirunidades = (id, valor) => {
         metro = valor*0.914;
         pie = valor*3;
     }
-    document.getElementById("metro").value = metro;
-    document.getElementById("pie").value = pie;
-    document.getElementById("pulgada").value = pulgada;
-    document.getElementById("yarda").value = yarda;
+    document.getElementById("metro").value = Math.round(metro*100)/100;
+    document.getElementById("pie").value = Math.round(pie*100)/100;
+    document.getElementById("pulgada").value = pulgada.toFixed(2);
+    document.getElementById("yarda").value = yarda.toFixed(2);
 }
 
 
@@ -82,7 +83,7 @@ mostrarocultar = (valor) => {
 
 /**
  * Calcula la suma de dos valores ingresados por el usuario
- * @method 
+ * @method calcularsum()
  */
 calcularSum = () =>{
     let sum1, sum2;
