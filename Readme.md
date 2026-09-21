@@ -53,8 +53,8 @@
 
 - [x] Hola Mundo!
 - [x] Conversor de Unidades
-- [ ] Documentación
-- [ ] Grados a Radianes
+- [x] Documentación
+- [x] Grados a Radianes
 - [ ] Refactorización
 - [ ] Mostrar/Ocultar div
 - [ ] Mostrar/Ocultar Dialog
