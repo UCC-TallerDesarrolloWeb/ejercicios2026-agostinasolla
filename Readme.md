@@ -62,7 +62,7 @@
 - [x] Conversor de Unidades II
 - [ ] Operaciones Matemáticas II
 - [x] Renderizado Dinámico
-- [ ] Renderizado Dinámico del Dialog
+- [x] Renderizado Dinámico del Dialog
 - [ ] Carrito de Compras con localstorage
 - [ ] Vaciar Carrito y Eliminar Producto
 - [ ] Filter

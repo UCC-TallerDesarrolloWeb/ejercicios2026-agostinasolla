@@ -56,3 +56,12 @@ a:hover{
         background-color: var(--color-secundario);
         padding: 7px;
     }
+
+#modal{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50,-50%);
+}

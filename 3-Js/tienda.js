@@ -66,7 +66,9 @@ const productos = [
  * Mostrar un modal con el detalle de producto
  * @method mostrarModal
  */
-mostrarModal = () =>{
+mostrarModal = (num) =>{
+  document.getElementById("nombre-producto").innerText =productos(num).nombre;
+  document.getElementById("descripcion-producto").innerText = productos(num).descripcion;
   document.getElementById("modal").style.display = 'block';
 }
 
@@ -88,7 +90,7 @@ mostrarCatalogo = () =>{
     contenido += `<div> 
                   <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/$(producto.imagen)" alt=$(producto.nombre)>
                   <p>Cabezal cerrado</p>
-                  <button type="button" onclick="mostrarModal()">Ver detalle del producto</button>
+                  <button type="button" onclick="mostrarModal(${id})">Ver detalle del producto</button>
                 </div>`
   });
 }
