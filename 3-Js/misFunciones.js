@@ -80,3 +80,13 @@ mostrarocultar = (valor) => {
 */
 }
 
+/**
+ * Calcula la suma de dos valores ingresados por el usuario
+ * @method 
+ */
+calcularSum = () =>{
+    let sum1, sum2;
+    sum1 = number(document.getElementById("num1").value);
+    sum2 = number(document.getElementById("num2").value);
+    document.getElementById("totalS").value = sum1 + sum2
+}
