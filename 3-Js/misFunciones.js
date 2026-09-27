@@ -62,7 +62,6 @@ function convertirGr(id){
     document.getElementById("grados").value = grad;
     document.getElementById("radianes").value = rad;
 }
-
 /**
  * Mostrar u ocultar div segun seleccion del usuario
  * @method mostrarocultar
@@ -89,5 +88,23 @@ calcularSum = () =>{
     let sum1, sum2;
     sum1 = number(document.getElementById("num1").value);
     sum2 = number(document.getElementById("num2").value);
-    document.getElementById("totalS").innerText = sum1 + sum2
+    document.getElementById("totalS").innerText = sum1 + sum2;
+}
+calcularRes = () =>{
+    let res1, res2;
+    res1= number(document.getElementById("numr1").value);
+    res2= number(document.getElementById("numr2").value);
+    document.getElementById("totalR").innerText = res1 - res2;
+}
+calcularMul = () =>{
+    let mul1, mul2; 
+    mul1= number(document.getElementById("numm1").value);
+    mul2=number(document.getElementById("numm2").value);
+    document.getElementById("totalM").innerText = mul1 * mul2;
+}
+calcularDiv = () =>{
+    let div1, div2;
+    div1= number(document.getElementById("numd1").value);
+    div2 = number(document.getElementById("numd2").value);
+    document.getElementById("totalD").innerText = div1/div2;
 }

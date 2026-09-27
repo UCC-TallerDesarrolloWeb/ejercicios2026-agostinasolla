@@ -109,3 +109,18 @@ agregarAlCarrito = (num) => {
   console.log(carritoList);
   localStorage.setItem("carrito", JSON.stringify(carritoList));
 }
+
+mosrtarCarrito = () =>{
+  let carritoList = localStorage.getItem("carrito");
+  let contenido = "";
+
+  carritoList=JSON.parse(carritoList);
+  carritoList.forEach((num) => {
+    contenido += `<div>
+                    <h3> ${productos[num].nombre} </h3>
+                    <p> ${productos[num].precio} </h3>
+                  </div>`
+  });
+
+  document.getElementById("carrito").innerHTML = contenido;
+}
