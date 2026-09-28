@@ -67,8 +67,8 @@
 - [x] Vaciar Carrito y Eliminar Producto
 - [x] Filter
 - [x] Formatear Precio
-- [ ] Total y Cantidad de Productos
-- [ ] Ordenar el catálogo
+- [x] Total y Cantidad de Productos
+- [x] Ordenar el catálogo
 
 ## Unidad 4: Funcionamiento del Navegador y Herramientas de Desarrollo
 
