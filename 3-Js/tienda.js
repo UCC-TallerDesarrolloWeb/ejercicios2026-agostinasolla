@@ -84,12 +84,13 @@ cerrarModal = () =>{
  * Mostrar catalogo de prodcutos
  * @method mostrarCatalogo()
  */
-mostrarCatalogo = () =>{
+mostrarCatalogo = (newLista=productos) =>{
   let contenido = "";
-  productos.forEach((producto) => {
+  newLista.forEach((producto, id) => {
     contenido += `<div> 
                   <img src="https://ucc-tallerdesarrolloweb.github.io/filminas/images/ejercicios/$(producto.imagen)" alt=$(producto.nombre)>
-                  <p>Cabezal cerrado</p>
+                  <p>${producto.nombre}</p>
+                  <p>${producto.precio}</p>
                   <button type="button" onclick="mostrarModal(${id})">Ver detalle del producto</button>
                   <button type="button" onclick="agregarAlCarrito(${id})">Agregar al carrito</button>
                 </div>`
@@ -168,3 +169,37 @@ let vaciarCarrito = () => {
 localStorage.removeItem("carrito");
     }
   }
+
+let filtrarProductos =() =>{
+  let searchWord = document.getElementById("search").value;
+  let min = document.getElementById("price-min").value;
+  let max = document.getElementById("price-max").value; 
+  let marca = document.getElementById("marca").value;
+  let prot=document.getElementById("protectores").checked;
+  let entr=document.getElementById("entrenamiento").checked;
+  let dob = document.getElementById("dobok").checked;
+  let newLista = productos;
+
+  if(searchWord){
+    newLista = newLista.filter((prod) => prod.nombre.toLowerCase().includes(searchWord.toloweCase()))
+  }
+
+  if(min){
+    newLista = newLista.filter((prod) => prod.precio >= min)
+  }
+  if(max){
+    newLista = newLista.filter((prod) => prod.precio <= max)
+  }
+  if(marca != "Todas"){
+    newLista=newLista.filter((prod) => prod.marca == marca)
+  }
+  let category = [];
+  prot ? category.push("protectores") : "";
+  entr ? category.push("entrenamiento"): "";
+  dob ? category.push ("dobok"): "" ;
+
+  if(category.length >0){
+    newLista= newLista.filter((prod) => category.includes(prod.categoria))
+  }
+  mostrarCatalogo(newLista);
+}
