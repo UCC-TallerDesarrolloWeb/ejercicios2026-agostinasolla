@@ -65,3 +65,10 @@ a:hover{
     left: 50%;
     transform: translate(-50,-50%);
 }
+#cat-prod{
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    display:inline;
+    padding:7px;
+    border-radius: 50%;
+}
