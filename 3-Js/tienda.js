@@ -129,13 +129,29 @@ mosrtarCarrito = () =>{
   else{
 
   carritoList=JSON.parse(carritoList);
+  let total = 0;
+  const listProd =[];
+  const listCant = [];
+  carritoList.forEach((num) => {
+      if(listProd.includes(num)){
+      listProd.push(num);
+      listCant.push(1);
+    }
+    else{
+      const inx = listProd.indexOf(num);
+      listCant[inx]+=1;
+    }
+  })
   carritoList.forEach((num, id) => {
     contenido += `<div>
                     <h3> ${productos[num].nombre} </h3>
-                    <p> ${productos[num].precio} </h3>
+                    <p> ${productos[num].precio} </p>
+                    <p> ${lisCant(id)}</p>
                     <button type="button" onclick="eliminarProducto(${id})">Eliminar producto</button>
                   </div>`;
+    total += productos(num).precio;
   });
+  contenido += `total: $(formatPrice(total))` 
   contenido += `<button type="button" onclick="vaciarCarrito()">vaciar carrito </button>`
 }
 
