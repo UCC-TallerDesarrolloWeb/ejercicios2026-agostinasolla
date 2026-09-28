@@ -64,7 +64,7 @@
 - [x] Renderizado Dinámico
 - [x] Renderizado Dinámico del Dialog
 - [x] Carrito de Compras con localstorage
-- [ ] Vaciar Carrito y Eliminar Producto
+- [x] Vaciar Carrito y Eliminar Producto
 - [ ] Filter
 - [ ] Formatear Precio
 - [ ] Total y Cantidad de Productos
