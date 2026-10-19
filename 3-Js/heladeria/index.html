@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gelato Pampa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero__contenido">
+      <h1 id="nombre-heladeria">Heladería</h1>
+      <p id="eslogan">Cargando carta…</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="catalogo" aria-labelledby="titulo-catalogo">
+      <h2 id="titulo-catalogo" class="sr-only">Sabores</h2>
+
+      <form class="filtros" id="filtros">
+        <label class="campo">
+          Buscar sabor
+          <input type="search" id="buscador" placeholder="Ej: chocolate">
+        </label>
+
+        <label class="campo">
+          Categoría
+          <select id="filtro-categoria">
+            <option value="todas">Todas las categorías</option>
+          </select>
+        </label>
+
+        <label class="campo">
+          Ordenar por
+          <select id="orden">
+            <option value="nombre">Nombre (A-Z)</option>
+            <option value="precio-asc">Precio: menor a mayor</option>
+            <option value="precio-desc">Precio: mayor a menor</option>
+            <option value="stock">Más stock primero</option>
+          </select>
+        </label>
+
+        <div class="checks">
+          <label class="check"><input type="checkbox" id="filtro-vegano"> Solo veganos</label>
+          <label class="check"><input type="checkbox" id="filtro-sin-tacc"> Solo sin TACC</label>
+        </div>
+      </form>
+
+      <p id="contador-resultados" class="contador" aria-live="polite"></p>
+      <div id="lista-sabores" class="grid"></div>
+    </section>
+
+    <aside class="carrito" aria-labelledby="titulo-carrito">
+      <h2 id="titulo-carrito">Tu pedido</h2>
+      <ul id="carrito-items" class="lista-carrito"></ul>
+
+      <dl class="totales">
+        <dt>Subtotal</dt>
+        <dd id="subtotal">$ 0</dd>
+        <dt>Descuento</dt>
+        <dd id="descuento">$ 0</dd>
+        <dt class="totales__total">Total</dt>
+        <dd id="total" class="totales__total">$ 0</dd>
+      </dl>
+
+      <div class="acciones">
+        <button type="button" class="btn" id="btn-finalizar">Confirmar pedido</button>
+        <button type="button" class="btn btn--secundario" id="btn-vaciar">Vaciar</button>
+      </div>
+      <p id="mensaje-pedido" class="mensaje" aria-live="polite"></p>
+    </aside>
+  </main>
+
+  <section class="estadisticas" aria-labelledby="titulo-stats">
+    <h2 id="titulo-stats">Panel del día</h2>
+    <div id="estadisticas" class="stats"></div>
+  </section>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

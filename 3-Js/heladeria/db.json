@@ -1,0 +1,37 @@
+{
+  "heladeria": {
+    "nombre": "Gelato Pampa",
+    "eslogan": "Helado artesanal, hecho todos los días.",
+    "moneda": "ARS"
+  },
+  "promociones": [
+    { "nombre": "Pedido grande", "minimoBolas": 6, "porcentaje": 10 },
+    { "nombre": "Pedido familiar", "minimoBolas": 12, "porcentaje": 15 }
+  ],
+  "sabores": [
+    { "id": 1, "nombre": "Dulce de leche granizado", "categoria": "Dulces de leche", "precio": 2200, "stock": 12, "vegano": false, "sinTacc": true, "color": "#C98B4E", "descripcion": "Dulce de leche con vetas crocantes de chocolate." },
+    { "id": 2, "nombre": "Dulce de leche clásico", "categoria": "Dulces de leche", "precio": 2000, "stock": 20, "vegano": false, "sinTacc": true, "color": "#D9A066", "descripcion": "El de siempre, cremoso y bien caramelo." },
+    { "id": 3, "nombre": "Súper dulce de leche", "categoria": "Dulces de leche", "precio": 2400, "stock": 0, "vegano": false, "sinTacc": true, "color": "#B9732F", "descripcion": "Dulce de leche con ribetes de dulce de leche repostero." },
+    { "id": 4, "nombre": "Chocolate amargo", "categoria": "Chocolates", "precio": 2200, "stock": 15, "vegano": true, "sinTacc": true, "color": "#4A2C20", "descripcion": "Intenso, a base de agua y cacao puro." },
+    { "id": 5, "nombre": "Chocolate suizo", "categoria": "Chocolates", "precio": 2300, "stock": 9, "vegano": false, "sinTacc": true, "color": "#6B4033", "descripcion": "Chocolate con leche y trocitos de chocolate blanco." },
+    { "id": 6, "nombre": "Chocolate con almendras", "categoria": "Chocolates", "precio": 2500, "stock": 6, "vegano": false, "sinTacc": false, "color": "#8A5A44", "descripcion": "Chocolate cremoso con almendras tostadas." },
+    { "id": 7, "nombre": "Vainilla", "categoria": "Cremas", "precio": 1900, "stock": 18, "vegano": false, "sinTacc": true, "color": "#F2E2A9", "descripcion": "Vainilla de verdad, con semillitas." },
+    { "id": 8, "nombre": "Crema americana", "categoria": "Cremas", "precio": 1900, "stock": 14, "vegano": false, "sinTacc": true, "color": "#F4E8C1", "descripcion": "Suave y liviana, ideal para combinar." },
+    { "id": 9, "nombre": "Sambayón", "categoria": "Cremas", "precio": 2300, "stock": 5, "vegano": false, "sinTacc": true, "color": "#E9C46A", "descripcion": "Crema de yema con un toque de vino marsala." },
+    { "id": 10, "nombre": "Mascarpone con frutos del bosque", "categoria": "Cremas", "precio": 2600, "stock": 8, "vegano": false, "sinTacc": true, "color": "#B565A7", "descripcion": "Mascarpone con salsa de frutos rojos." },
+    { "id": 11, "nombre": "Limón", "categoria": "Frutales", "precio": 1800, "stock": 16, "vegano": true, "sinTacc": true, "color": "#E5EC6A", "descripcion": "Ácido y refrescante, con ralladura de limón." },
+    { "id": 12, "nombre": "Frambuesa", "categoria": "Frutales", "precio": 2100, "stock": 10, "vegano": true, "sinTacc": true, "color": "#D63A6A", "descripcion": "Fruta pura, sin lácteos." },
+    { "id": 13, "nombre": "Maracuyá", "categoria": "Frutales", "precio": 2100, "stock": 0, "vegano": true, "sinTacc": true, "color": "#F5B82E", "descripcion": "Tropical y bien ácido." },
+    { "id": 14, "nombre": "Frutilla al agua", "categoria": "Frutales", "precio": 1900, "stock": 13, "vegano": true, "sinTacc": true, "color": "#F27A8F", "descripcion": "Frutillas frescas, nada más." },
+    { "id": 15, "nombre": "Banana split", "categoria": "Cremas", "precio": 2400, "stock": 7, "vegano": false, "sinTacc": false, "color": "#F3D98B", "descripcion": "Banana, dulce de leche y galletitas." },
+    { "id": 16, "nombre": "Menta granizada", "categoria": "Cremas", "precio": 2200, "stock": 11, "vegano": false, "sinTacc": true, "color": "#8FD9B6", "descripcion": "Menta fresca con chips de chocolate." }
+  ],
+  "pedidos": [
+    { "id": 1, "cliente": "Lucía", "fecha": "2026-09-28", "items": [ { "saborId": 1, "cantidad": 2 }, { "saborId": 7, "cantidad": 1 } ] },
+    { "id": 2, "cliente": "Martín", "fecha": "2026-09-28", "items": [ { "saborId": 4, "cantidad": 1 }, { "saborId": 12, "cantidad": 3 }, { "saborId": 11, "cantidad": 1 } ] },
+    { "id": 3, "cliente": "Familia Gómez", "fecha": "2026-09-29", "items": [ { "saborId": 2, "cantidad": 2 }, { "saborId": 5, "cantidad": 2 }, { "saborId": 14, "cantidad": 2 }, { "saborId": 8, "cantidad": 1 } ] },
+    { "id": 4, "cliente": "Sofía", "fecha": "2026-09-30", "items": [ { "saborId": 10, "cantidad": 2 }, { "saborId": 1, "cantidad": 1 } ] },
+    { "id": 5, "cliente": "Tomás", "fecha": "2026-10-01", "items": [ { "saborId": 16, "cantidad": 2 }, { "saborId": 4, "cantidad": 2 }, { "saborId": 7, "cantidad": 1 } ] },
+    { "id": 6, "cliente": "Valentina", "fecha": "2026-10-01", "items": [ { "saborId": 9, "cantidad": 1 }, { "saborId": 12, "cantidad": 1 }, { "saborId": 1, "cantidad": 2 } ] }
+  ]
+}
