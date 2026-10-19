@@ -1,0 +1,8 @@
+@use 'variables';
+
+.caja{
+    h2{
+        color:variables.$color-letra;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
