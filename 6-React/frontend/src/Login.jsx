@@ -11,6 +11,7 @@ const Login = () => {
         e.preventDefault();
         if(username == "admin" && password=="admin"){
             console.log("Login Ok")
+            localStorage.setItem("isLoggedIn", "true");
             navigate('/actividades')
         }
         else{
