@@ -11,7 +11,7 @@ const Login = () => {
         e.preventDefault();
         if(username == "admin" && password=="admin"){
             console.log("Login Ok")
-            navigate(/"actividades")
+            navigate('/actividades')
         }
         else{
             console.log("login incorrecto")
