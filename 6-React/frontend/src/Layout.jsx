@@ -1,5 +1,5 @@
-import Header from "./Header"
-import Footer from "./Footer"
+import Header from "@pages/Header"
+import Footer from "@Components/Footer"
 import {Outlet} from "react-router-dom"
 
 const Layout = () => {
